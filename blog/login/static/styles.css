@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Общий контейнер центрации сайта */
+#wrapper {
+    width: 1000px;
+    margin: 30px auto;
+    background-color: #f9f9f9; /* Светлый фон */
+    border-radius: 8px; /* Скругленные углы */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Мягкая тень */
+    overflow: hidden; /* Скругление рамки */
+}
+
+/* Заголовок и меню */
+#header {
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fff; /* Белый фон */
+    border-bottom: 1px solid #e0e0e0; /* Легкая граница снизу */
+}
+
+/* Меню навигации */
+#menu a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333; /* Темный серый текст */
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+#menu a:hover {
+    color: #007BFF; /* Голубой при наведении */
+}
+
+/* Общий контейнер для контента и сайдбара */
+#container {
+    display: flex;
+    min-height: 700px;
+    background-color: #fff; /* Белый фон */
+}
+
+/* Боковая панель */
+#sidebar {
+    width: 200px;
+    padding: 20px;
+    border-right: 1px solid #e0e0e0; /* Легкая граница справа */
+    background-color: #fafafa; /* Очень светлый серый */
+}
+
+/* Основной контент */
+#content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Подвал */
+#footer {
+    height: 100px; /* немного меньше чтобы не было слишком большого */
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0; /* Легкая граница сверху */
+    text-align: center;
+    color: #777;
+}
