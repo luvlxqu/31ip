@@ -11,6 +11,7 @@
             <th>Фамилия</th>
             <th>Возраст</th>
             <th>Баланс</th>
+            <th>Роль</th>
         </tr>
         {% for user in users %}
         <tr>
@@ -20,6 +21,7 @@
             <td>{{ user.last_name }}</td>
             <td>{{ user.age }}</td>
             <td>{{ user.balance }}</td>
+            <td>{{ user.role }}</td>
         </tr>
         {% endfor %}
     </table>

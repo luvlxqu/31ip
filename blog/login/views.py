@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import User
 from .forms import UserForm
+from .decorators import login_required, is_director
 
 def users(request):
     if request.session.get('user_id'):
@@ -55,3 +56,11 @@ def login(request):
 def logout_view(request):
     request.session.flush()
     return redirect('/login')
+
+@login_required
+def for_authorized(request):
+    return render(request, 'page_for_authorized.html')
+
+@is_director
+def for_director(request):
+    return render(request, 'page_for_director.html')
